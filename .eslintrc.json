@@ -15,8 +15,7 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "prettier",
-    "plugin:prettier/recommended"
+    "prettier"
   ],
   "ignorePatterns": ["dist", ".eslintrc.cjs"],
   "parser": "@typescript-eslint/parser",
@@ -32,7 +31,6 @@
       "jsx": true
     }
   },
-
   "rules": {
     "quotes": ["error", "double"],
     "semi": "error",
