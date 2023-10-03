@@ -1,0 +1,71 @@
+{
+  "root": true,
+  "env": { "browser": true, "es2020": true },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": ["dist", ".eslintrc.cjs"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react-refresh",
+    "react",
+    "jsx-a11y",
+    "import",
+    "testing-library"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "rules": {
+    "quotes": ["error", "double"],
+    "semi": "error",
+    "no-console": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ],
+    "jsx-a11y/aria-role": [
+      2,
+      {
+        "allowedInvalidRoles": ["text"],
+        "ignoreNonDOM": true
+      }
+    ],
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": [".svg"]
+      }
+    ],
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-uses-react": 0,
+    "testing-library/await-async-queries": "error",
+    "testing-library/no-await-sync-queries": "error",
+    "testing-library/no-debugging-utils": "warn",
+    "testing-library/no-dom-import": "off"
+  }
+}
