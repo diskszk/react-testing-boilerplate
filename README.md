@@ -1,6 +1,8 @@
 # React Testing Boilerplate
 
-A boilerplate for React ( TypeScript ) + vitest + react-testing-library.
+React　（ TypeScript ) + フロントエンドテスト環境( vitest, react-testing-library, msw )のテンプレート。
+
+A boilerplate for React ( TypeScript ) + vitest + react-testing-library　+ msw.
 
 ## Usage
 
